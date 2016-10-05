@@ -4,7 +4,8 @@ test:
 deployment:
   staging:
     branch: master
-    hello:
+    codedeploy:
+       hello:
         application_root: /
         region: us-east-1
         revision_location:

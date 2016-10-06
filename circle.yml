@@ -7,10 +7,10 @@ deployment:
     codedeploy:
        hello:
         application_root: /
-        region: us-east-1
+        region: eu-west-1
         revision_location:
           revision_type: S3
           s3_location:
-            bucket: glob-bucket-east-1
-            key_pattern: hello-{BRANCH}-{SHORT_COMMIT}
-        deployment_group: hello-dg
+            bucket: circleci-hello
+            key_pattern: circleci-codedeploy-hello-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: ciecleci-hello-dg
